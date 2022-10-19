@@ -37,5 +37,21 @@ public UserServiceImpl(UserRepository userRepository) {
 		return status;
 		
 	}
+	@Override
+	public User getUser(String username) {
+		User user=userRepository.findByUsername(username);
+		return user;
+	}
+	@Override
+	public User updateUser(String username,User user) {
+		User old_user=userRepository.findByUsername(username);
+		User temp_user=user;
+		temp_user.setUserId(old_user.getUserId());
+		User new_user =userRepository.save(temp_user);
+		return new_user;
+		
+		
+	}
+
 
 }
