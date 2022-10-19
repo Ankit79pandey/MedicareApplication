@@ -3,7 +3,7 @@
 <router-outlet></router-outlet>
 <body>
 
-<h2 >Login Form</h2>
+<h2 style="margin: 50px;">User Login Form</h2>
 
 <form #f="ngForm" (ngSubmit)="onSubmit(f)">
   
@@ -25,9 +25,9 @@
     </label>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">New User ?<a [routerLink]="['/registration']"style="color:blue">Sign Up</a>
+  <div class="container" style="background-color: rgb(31, 162, 206);">
+    <button type="button" class="cancelbtn text-light">Cancel</button>
+    <span class="psw text-light">New User ?<a [routerLink]="['/registration']"style="color:yellow">Sign Up</a>
     </span>
   </div>
 </form>

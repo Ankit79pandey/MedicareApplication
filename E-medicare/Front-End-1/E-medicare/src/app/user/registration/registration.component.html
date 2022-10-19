@@ -1,8 +1,8 @@
 <app-header></app-header>
 <div style="display: flex">
-  <div id="sect1"class="container"></div>
-	<div class="enroll" style="margin-top: 30px">
-
+  
+	<div class="container-fluid" style="margin-top: 30px">
+<div class="container form">
 <h3> User Registration</h3>
   <form #s="ngForm" (ngSubmit)="onSubmit(s)">
       <div class="form-group">
@@ -49,5 +49,6 @@
       <input [disabled]="s.invalid" type="submit" value="Submit" />
      
     </form>
+  </div>
     </div>
     </div>

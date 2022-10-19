@@ -66,7 +66,7 @@ export class AdminpageComponent implements OnInit {
 }
 DeleteMedicine(row :any){
  
-  console.log(row.medicineId)
+
   this.service.DeleteUserDetails(row.medicineId).subscribe(res=>{
     Swal.fire('Medicine Deleted Successfully !!');
     window.location.reload();

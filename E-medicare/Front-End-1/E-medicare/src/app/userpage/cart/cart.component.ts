@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
 export class CartComponent implements OnInit {
 
 carts:cart[]|undefined;
- 
+ count:number=0;
 
   constructor(private cartService: CartService,
    private router: Router,
@@ -24,6 +24,9 @@ carts:cart[]|undefined;
       this.carts = cart;
     })
     
+  }
+  delete(medicineId:number){
+    this.cartService.deleteCart(medicineId).subscribe();
   }
 
   deleteCart(medicineId: number){
@@ -41,6 +44,7 @@ carts:cart[]|undefined;
   payment(){
     Swal.fire('Your Order Placed Succesfully');
     // alert('Your Order Placed Succesfully') ;
+
     this.router.navigate(['/billing'], {relativeTo: this.route});
   }
   back(){

@@ -52,7 +52,7 @@
                         <td>{{cart.medicineName}}</td>
                         <td>{{cart.description}}</td>
                         <td>{{cart.price}}</td>
-                        <td> <a routerLink="/billing/{{cart.medicineId}}" class="button">BUY NOW</a></td>
+                        <td> <a routerLink="/billing/{{cart.medicineId}}"  (click)="delete(cart.medicineId)" class="button">BUY NOW</a></td>
                         <td> <button (click)="deleteCart(cart.medicineId)" class="buttonon">REMOVE FROM CART</button></td>
                         
                     </tr>

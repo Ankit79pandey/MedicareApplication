@@ -1,5 +1,5 @@
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+/* form {border: 3px solid #f1f1f1;} */
 
 input[type=Username], input[type=password] {
   width: 100%;
@@ -8,6 +8,12 @@ input[type=Username], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+form{
+  width: 700px;
+  margin-left: 27%;
+  border: solid white;
+  padding: 30px;
 }
 
 button {
@@ -32,9 +38,9 @@ button:hover {
 
 
 
-.container {
+/* .container {
   padding: 16px;
-}
+} */
 
 
 
